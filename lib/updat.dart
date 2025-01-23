@@ -23,8 +23,8 @@ class UpdatWidget extends StatefulWidget {
     this.callback,
     this.openOnDownload = true,
     this.closeOnInstall = false,
-    super.key,
-  });
+    Key? key,
+  }) : super(key: key);
 
   ///  This function will be invoked to ckeck if there is a new version available. The return string must be a semantic version.
   final Future<String?> Function() getLatestVersion;
@@ -225,9 +225,10 @@ class _UpdatWidgetState extends State<UpdatWidget> {
       }
       return;
     }
-    setState(() {
-      status = UpdatStatus.downloading;
-    });
+
+    status = UpdatStatus.downloading;
+
+
     // Get the URL to download the file from.
     final url = await widget.getBinaryUrl(latestVersion!.toString());
 
@@ -254,9 +255,8 @@ class _UpdatWidgetState extends State<UpdatWidget> {
         return;
       }
 
-      setState(() {
-        status = UpdatStatus.readyToInstall;
-      });
+      status = UpdatStatus.readyToInstall;
+
 
       if (widget.openOnDownload) launchInstaller();
     }
