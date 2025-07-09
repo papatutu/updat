@@ -543,12 +543,12 @@ packages:
   window_manager_clone:
     dependency: transitive
     description:
-      path: "packages/window_manager"
-      ref: "732a032"
-      resolved-ref: "732a0320bad35e9c528642a487b737988747a3d1"
+      path: "."
+      ref: "2737ae2"
+      resolved-ref: "2737ae28297d287a5ba78ab62f516a9f23a62512"
       url: "https://github.com/papatutu/window_manager_clone.git"
     source: git
-    version: "0.5.0"
+    version: "0.4.3"
   xdg_directories:
     dependency: transitive
     description:
