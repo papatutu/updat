@@ -4,7 +4,7 @@ import 'package:universal_io/io.dart';
 import 'package:flutter/material.dart';
 import 'package:updat/theme/chips/floating_with_silent_download.dart';
 import 'package:updat/updat.dart';
-import 'package:window_manager/window_manager.dart';
+import 'package:window_manager_clone/window_manager.dart';
 
 class UpdatWindowManager extends StatefulWidget {
   final Widget child;
@@ -93,10 +93,8 @@ class UpdatWindowManager extends StatefulWidget {
   State<UpdatWindowManager> createState() => _UpdatWindowManagerState();
 }
 
-class _UpdatWindowManagerState extends State<UpdatWindowManager>
-    with WindowListener {
-  final shouldRun =
-      !kIsWeb && (Platform.isWindows || Platform.isMacOS || Platform.isLinux);
+class _UpdatWindowManagerState extends State<UpdatWindowManager> with WindowListener {
+  final shouldRun = !kIsWeb && (Platform.isWindows || Platform.isMacOS || Platform.isLinux);
   @override
   void initState() {
     // Check if the app is running on Web
