@@ -21,7 +21,7 @@ dependencies:
     git:
       url: https://github.com/papatutu/window_manager_clone.git
       path: packages/window_manager
-      ref: 732a032
+      ref: 6f46009
   archive: ^3.3.7
   universal_io: ^2.2.2
 
