@@ -19,9 +19,8 @@ dependencies:
   flutter_markdown: ^0.6.10+3
   window_manager_clone:
     git:
-      url: https://github.com/papatutu/window_manager_clone.git
-      ref: bb6485f
-
+      url: https://github.com/papatutu/window_manager_clone
+      ref: 28fab5a
 
   archive: ^3.3.7
   universal_io: ^2.2.2
